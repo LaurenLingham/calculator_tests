@@ -9,10 +9,10 @@ describe('Calculator', () => {
   })
 
   it("should change running total on number enter", () => {
-    const button4 = container.getByTestId('number4');
-    const runningTotal = container.getByTestId('running-total');
+    const button4 = container.getByTestId("number4");
+    const runningTotal = container.getByTestId("running-total");
     fireEvent.click(button4);
-    expect(runningTotal.textContent).toEqual('4');
+    expect(runningTotal.textContent).toEqual("4");
   })
 
   it("should be able to add", () => {
